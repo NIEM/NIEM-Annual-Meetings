@@ -1,2 +1,5 @@
 # 2018-meeting
-Repo for the 2018 Fall NIEM Face to Face Meeting
+
+Repository for a website for the NIEM Fall 2018 Joint NTAC-NBAC Face-to-Face Meeting
+
+This website is hosted at <https://niem.github.io/2018-fall>.

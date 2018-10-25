@@ -10,6 +10,10 @@ Oct 29&ndash;Nov 2, 2018
 
 # Agenda
 
+## ?
+
+[Milops Domain Update](files/milops-domain-update.pptx)
+
 ## Thursday Nov 1
 
 [NTAC Agenda](files/ntac-agenda.docx)

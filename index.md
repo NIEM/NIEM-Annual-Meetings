@@ -12,9 +12,7 @@ Oct 29&ndash;Nov 2, 2018
 
 See [the full agenda as a Word document](files/full-agenda.docx).
 
-## ?
-
-[Milops Domain Update](files/milops-domain-update.pptx)
+- [Milops Domain Update](files/milops-domain-update.pptx)
 
 # Resources
 

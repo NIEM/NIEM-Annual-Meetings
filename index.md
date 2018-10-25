@@ -17,7 +17,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 
 # Meeting Documents
 
-
+* [NIEM Release Updates](files/release-updates.pptx)
 
 # Resources
 

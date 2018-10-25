@@ -1,5 +1,5 @@
 ---
-title: Resources for the Fall 2018 NIEM Joint NTAC-NBAC Face-to-Face Meeting
+title: NIEM Face-to-Face 2018: NBAC (29-30 OCT), Combined PMO, NBAC, NTAC (31 OCT), and NTAC (1-2 NOV) Meetings
 ---
 
 # Welcome to the NIEM Fall 2018 Joint NTAC&ndash;NBAC Face-to-Face Meeting

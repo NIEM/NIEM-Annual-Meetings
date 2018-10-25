@@ -12,7 +12,7 @@ Oct 29&ndash;Nov 2, 2018
 
 ## Thursday Nov 1
 
-[NTAC Agenda](2018-fall/files/ntac-agenda.docx)
+[NTAC Agenda](files/ntac-agenda.docx)
 
 # Resources
 

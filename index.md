@@ -17,7 +17,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 
 # Meeting Documents
 
-- [Milops Domain Update](files/milops-domain-update.pptx)
+
 
 # Resources
 

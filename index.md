@@ -17,10 +17,8 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 
 # Meeting Documents
 
-* [NIEM Housing Domain Update](files/NIEM-HSG-Domain-Update-102018.pptx)
+* [NIEM Housing Domain Update](files/NEIM-HSG-Domain-Update-102018.pptx)
 * [NIEM Release Updates](files/release-updates.pptx)
-
-
 
 # Resources
 

@@ -17,6 +17,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 
 # Meeting Documents
 
+* [NIEM Health COI](files/NIEM_Health_Face2Face2018_FINAL.pptx)
 * [NIEM Housing Domain Update](files/NEIM-HSG-Domain-Update-102018.pptx)
 * [NIEM Release Updates](files/release-updates.pptx)
 

@@ -20,7 +20,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 * [Day1 NIEM F2F Opening](files/Day1-NIEM-F2F-Opening 2018-v3-FINAL.pptx)
 * [Grants Data Management Standardization Update](files/Grants Data MGMT Standardization Update -V3-10272018.pdf)
 * [NBAC Emerging Technologies Tiger Team Update](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
-* [NBAC International Tiger Team Update](files/NBAC_Intl_TT_F2F_Update_v2_Oct2018.pdf)
+* [NBAC International Tiger Team Update](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
 * [NIEM EM Domain Update](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
 * [NIEM Health COI Update](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
 * [NIEM Housing Domain Update](files/NEIM-HSG-Domain-Update-102018.pptx)

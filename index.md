@@ -21,7 +21,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 * [Agriculture](files/Agriculture-F2F-Domain-Update.pptx)
 * [EM Domain](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
 * [Emerging Technologies Tiger Team](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
-* [Grants Data Management Standardization](files/Grants Data MGMT Standardization Update -V3-10272018.pdf)
+* [Grants Data Management Standardization](files/Grants-Data-MGMT-Standardization-Update -V3-10272018.pdf)
 * [Health COI](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
 * [Housing Domain](files/NEIM-HSG-Domain-Update-102018.pptx)
 * [Human Services](files/NIEM-Domain-Update-Human-Services.pptx)

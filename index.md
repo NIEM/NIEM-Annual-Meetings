@@ -26,6 +26,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 * [Housing Domain](files/NEIM-HSG-Domain-Update-102018.pptx)
 * [Human Services](files/NIEM-Domain-Update-Human-Services.pptx)
 * [International Tiger Team](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
+* [MilOps Domain](files/Day1_MilOps-Domain-Update-F2F-29Oct2018.pptx)
 * [NIEM Release Update](files/release-updates.pptx)
 * [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)
 * [Statistics Domain](files/NIEM-Statistics-Domain-Status Update.pptx)

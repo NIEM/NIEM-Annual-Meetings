@@ -17,9 +17,12 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 
 # Meeting Documents
 
-* [NIEM Health COI](files/NIEM_Health_Face2Face2018_FINAL.pptx)
+* [Day1 NIEM F2F Opening](Day1-NIEM-F2F-Opening 2018-v3-FINAL.pptx)
+* [Grants Data Management Standardization Update](Grants Data MGMT Standardization Update -V3-10272018.pdf)
+* [NIEM EM Domain Update](files/NIEM EM Domain F2F Update (2018)-Final.pptx)
+* [NIEM Health COI Update](files/NIEM_Health_Face2Face2018_FINAL.pptx)
 * [NIEM Housing Domain Update](files/NEIM-HSG-Domain-Update-102018.pptx)
-* [NIEM Release Updates](files/release-updates.pptx)
+* [NIEM Release Update](files/release-updates.pptx)
 
 # Resources
 

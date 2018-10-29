@@ -22,7 +22,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 * [NBAC Emerging Technologies Tiger Team Update](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
 * [NBAC International Tiger Team Update](files/NBAC_Intl_TT_F2F_Update_v2_Oct2018.pdf)
 * [NIEM EM Domain Update](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
-* [NIEM Health COI Update](files/NIEM_Health_Face2Face2018_FINAL.pptx)
+* [NIEM Health COI Update](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
 * [NIEM Housing Domain Update](files/NEIM-HSG-Domain-Update-102018.pptx)
 * [NIEM Human Services Update](files/NIEM-Domain-Update-Human-Services.pptx)
 * [NIEM Release Update](files/release-updates.pptx)

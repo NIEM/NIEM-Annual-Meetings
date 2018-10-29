@@ -18,17 +18,18 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 # Meeting Documents
 
 * [Day1 NIEM F2F Opening](files/Day1-NIEM-F2F-Opening 2018-v3-FINAL.pptx)
-* [Agriculture Update](files/Agriculture-F2F-Domain-Update.pptx)
-* [Grants Data Management Standardization Update](files/Grants Data MGMT Standardization Update -V3-10272018.pdf)
-* [NBAC Emerging Technologies Tiger Team Update](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
-* [NBAC International Tiger Team Update](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
-* [NIEM EM Domain Update](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
-* [NIEM Health COI Update](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
-* [NIEM Housing Domain Update](files/NEIM-HSG-Domain-Update-102018.pptx)
-* [NIEM Human Services Update](files/NIEM-Domain-Update-Human-Services.pptx)
+* [Agriculture](files/Agriculture-F2F-Domain-Update.pptx)
+* [EM Domain](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
+* [Emerging Technologies Tiger Team](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
+* [Grants Data Management Standardization](files/Grants Data MGMT Standardization Update -V3-10272018.pdf)
+* [Health COI](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
+* [Housing Domain](files/NEIM-HSG-Domain-Update-102018.pptx)
+* [Human Services](files/NIEM-Domain-Update-Human-Services.pptx)
+* [International Tiger Team](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
 * [NIEM Release Update](files/release-updates.pptx)
-* [NIEM Statistics Domain Update](files/NIEM-Statistics-Domain-Status Update.pptx)
 * [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)
+* [Statistics Domain](files/NIEM-Statistics-Domain-Status Update.pptx)
+
 
 # Resources
 

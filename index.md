@@ -1,5 +1,5 @@
 ---
-title: NIEM Face-to-Face 2018: NBAC (29-30 OCT), Combined PMO, NBAC, NTAC (31 OCT), and NTAC (1-2 NOV) Meetings
+title: "NIEM Face-to-Face 2018: NBAC (29-30 OCT), Combined PMO, NBAC, NTAC (31 OCT), and NTAC (1-2 NOV) Meetings"
 ---
 
 # Welcome to the NIEM Fall 2018 NTAC&ndash;NBAC Face-to-Face Meeting
@@ -34,7 +34,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 * [NIEM Release Update](files/release-updates.pptx)
 * [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)
 * [Statistics Domain](files/NIEM-Statistics-Domain-Status Update.pptx)
-
+* [NIEM Curriculum Overview (docx)](files/NIEM-curriculum-overview.docx)
 
 # Resources
 

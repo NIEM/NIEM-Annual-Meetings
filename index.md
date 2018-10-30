@@ -28,7 +28,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 * [Human Services](files/NIEM-Domain-Update-Human-Services.pptx)
 * [International Tiger Team](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
 * [MilOps Domain](files/Day1_MilOps-Domain-Update-F2F-29Oct2018.pptx)
-* [NIEM Strategic Planning](files/NIEM-F2F-Strategic-Planning.pptx)
+* [NIEM Strategic Planning](files/NIEM-F2F-Strategic-Planning-v1.pptx)
 * [NIEM IEPD Registry](files/NIEM-IEPD-Registry-F2F_20181029.pptx)
 * [NIEM Release Update](files/release-updates.pptx)
 * [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)

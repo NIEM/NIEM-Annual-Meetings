@@ -17,24 +17,32 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 
 # Meeting Documents
 
-* [Day1 NIEM F2F Opening](files/Day1-NIEM-F2F-Opening 2018-v3-FINAL.pptx)
-* [Agriculture](files/Agriculture-F2F-Domain-Update.pptx)
-* [EM Domain](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
-* [Emerging Technologies Tiger Team](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
-* [ESB Modernization](files/ESB_Modernization(v1.4).pptx)
-* [Grants Data Management Standardization](files/Grants-Data-MGMT-Standardization-Update -V3-10272018.pdf)
-* [Health COI](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
-* [Housing Domain](files/NEIM-HSG-Domain-Update-102018.pptx)
-* [Human Services](files/NIEM-Domain-Update-Human-Services.pptx)
-* [International Tiger Team](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
-* [MilOps Domain](files/Day1_MilOps-Domain-Update-F2F-29Oct2018.pptx)
-* [NIEM Strategic Planning](files/NIEM-F2F-Strategic-Planning-v1.pptx)
-* [NIEM Strategy 2010/2019](files/NIEM-Strategy2010_2019_Draft.docx)
-* [NIEM IEPD Registry](files/NIEM-IEPD-Registry-F2F_20181029.pptx)
-* [NIEM Release Update](files/release-updates.pptx)
-* [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)
-* [Statistics Domain](files/NIEM-Statistics-Domain-Status Update.pptx)
-* [NIEM Curriculum Overview (docx)](files/NIEM-curriculum-overview.docx)
+- Day 1 / Monday
+    - [Day1 NIEM F2F Opening](files/Day1-NIEM-F2F-Opening 2018-v3-FINAL.pptx)
+    - Domain updates
+        - [Health COI](files/NIEM_Health_Face2Face2018_Finalpresentation.pptx)
+        - [Human Services](files/NIEM-Domain-Update-Human-Services.pptx)
+        - [EM Domain](files/NIEM-EM-Domain-F2F-Update-(2018)-Final.pdf)
+        - [Statistics Domain](files/NIEM-Statistics-Domain-Status Update.pptx)
+        - [Housing Domain](files/NEIM-HSG-Domain-Update-102018.pptx)
+        - [Grants Data Management Standardization](files/Grants-Data-MGMT-Standardization-Update -V3-10272018.pdf)
+        - [ESB Modernization](files/ESB_Modernization(v1.4).pptx)
+        - [MilOps Domain](files/Day1_MilOps-Domain-Update-F2F-29Oct2018.pptx)
+        - (not presented) [Agriculture](files/Agriculture-F2F-Domain-Update.pptx)
+    - [International Tiger Team](files/NBAC-Intl-TT-F2F-Update-v23Oct2018.pptx)
+        
+- Day 2 / Tuesday
+    - [Emerging Technologies Tiger Team](files/NBAC_ET3_F2F_Update_(Oct_2018)_sml.pdf)
+    - [NIEM IEPD Registry](files/NIEM-IEPD-Registry-F2F_20181029.pptx)
+    - Strategy
+        - [NIEM Strategic Planning](files/NIEM-F2F-Strategic-Planning-v1.pptx)
+        - [NIEM Strategy 2010/2019](files/NIEM-Strategy2010_2019_Draft.docx)
+    - [NIEM Release Update](files/release-updates.pptx)
+    - [NIEM Training / Curriculum Overview (.docx)](files/NIEM-curriculum-overview.docx)
+
+- pending
+    - [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)
+
 
 # Resources
 

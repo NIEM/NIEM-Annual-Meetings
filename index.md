@@ -41,7 +41,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
 - Day 3 / Wednesday
     - [NIEM NBAC FY19 Program Plan](files/NIEM-FY19-Program-Plan_2019Oct31.pptx)
     - [NIEM Training / Curriculum Overview (.docx)](files/NIEM-curriculum-overview.docx)
-    - [NIEM Technical Architecture Committee (NTAC) Update](files/NTAC_2018_Update.pptx)
+    - [NIEM Technical Architecture Committee (NTAC) Update](files/NTAC-2018-Update(v2).pptx)
     - [NTAC Internationalization](files/ntac-internationalization.pptx)
     - [NTAC Tool Strategy](files/NTAC-Tool-Strategy.pptx)
 

@@ -38,6 +38,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
         - [NIEM Strategic Planning](files/NIEM-F2F-Strategic-Planning-v1.pptx)
         - [NIEM Strategy 2010/2019](files/NIEM-Strategy2010_2019_Draft.docx)
     - [NIEM Release Update](files/release-updates.pptx)
+- Day 3 / Wednesday
     - [NIEM Training / Curriculum Overview (.docx)](files/NIEM-curriculum-overview.docx)
 
 - pending

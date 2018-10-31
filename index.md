@@ -40,6 +40,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
     - [NIEM Release Update](files/release-updates.pptx)
 - Day 3 / Wednesday
     - [NIEM Training / Curriculum Overview (.docx)](files/NIEM-curriculum-overview.docx)
+    - [NIEM Technical Architecture Committee (NTAC) Update](files/NTAC_2018_Update.pptx)
 
 - pending
     - [Public Safety Canada CIOD](files/Canada-NBAC-Presentation.pdf)

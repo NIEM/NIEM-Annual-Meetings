@@ -39,6 +39,7 @@ See [the full agenda as a Word document](files/full-agenda.docx).
         - [NIEM Strategy 2010/2019](files/NIEM-Strategy2010_2019_Draft.docx)
     - [NIEM Release Update](files/release-updates.pptx)
 - Day 3 / Wednesday
+    - [NIEM NIEM FY19 Program Plan](files/NIEM-FY19-Program-Plan_2019Oct31.pptx)
     - [NIEM Training / Curriculum Overview (.docx)](files/NIEM-curriculum-overview.docx)
     - [NIEM Technical Architecture Committee (NTAC) Update](files/NTAC_2018_Update.pptx)
 

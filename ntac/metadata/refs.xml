@@ -1,0 +1,43 @@
+(_:b1)
+<message> (_:b2)
+  <person metdata="#CriminalInfoIndicator"> (_:b3)
+    <personName> (_:b4)
+      <firstName>(_:b7) Dave</firstName>
+    </personName>
+    <birthdate>(_:b5) June 4 1972</birthdate>
+    <ownsVehicle>(_:b6)
+      <VIN>928378903272</VIN>
+      <make>Ford</make>
+      <model>Probe</model>
+    </ownsVehicle>
+  </person>
+</message>
+
+(_:b1)
+<message> (_:b2)
+  <person metdata="#CriminalInfoIndicator"> (_:b3)
+    <personName> (_:b4)
+      <firstName>(_:b7) Dave</firstName>
+    </personName>
+    <birthdate>(_:b5) June 4 1972</birthdate>
+    <ownsVehicle structures:ref="b6"/>
+  </person>
+  <ownsVehicle structures:id="b6">
+    <VIN>928378903272</VIN>
+    <make>Ford</make>
+    <model>Probe</model>
+  </ownsVehicle>
+</message>
+
+_:b1 message _:b2.
+_:b2 person _:b3.
+_:b3 type "nc:PersonType",
+     personName _:b4,
+     birthdate _:b5,
+     ownsVehicle _:b6.
+_:b4 firstName _:b7.
+
+_:b7 type "nc:PersonNameTextType",
+     rdf:value "Dave".
+
+

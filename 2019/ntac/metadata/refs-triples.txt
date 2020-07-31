@@ -1,0 +1,42 @@
+_:b1 message _:b2.
+_:b2 person _:b3.
+_:b3 type "nc:PersonType",
+     personName _:b4,
+     birthdate _:b5,
+     ownsVehicle _:b6.
+_:b4 firstName _:b7.
+_:b7 rdf:value "Dave".
+_:b6 VIN _:b7. _:b7 rdf:value 982398723987.
+_:b6 make _:b8. _:b8 rdf:value Ford.
+_:b6 model _:b9. _:b8 rdf:value Probe.
+
+# option 1: metadata applies to a resource
+
+_:b2 person _:b3.
+_:b3 structures:metadata #CriminalInfoIndicator.
+_:b3 personName _:b4.
+
+# Option 1b : relationship metadata applies to a triple
+
+<message> _:b2
+  <person relationshipmetdata="#CriminalInfoIndicator"> (_:b3)
+
+criminalinfo _:b2 person _:b3
+
+# option 2
+
+(all the properties of _:b3 are criminal info)
+
+
+criminalInfo _:b3 personName _:b4.
+criminalInfo _:b3 birthdate _:b5.
+criminalInfo _:b3 ownsVehicle _:b6.
+criminalInfo _:b2 person _:b3.
+criminalInfo _:b4 firstName _:b7.
+criminalInfo _:b7 rdf:value "Dave".
+
+normal _:b1 message _:b2.
+
+
+
+q1: does that include children of properties of _:b3

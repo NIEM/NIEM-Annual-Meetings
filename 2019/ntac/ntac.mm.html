@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>NTAC</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+    span.foldopened { color: white; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: visible;
+    cursor:pointer; }
+
+
+    span.foldclosed { color: #666666; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: hidden;
+    cursor:pointer; }
+
+    span.foldspecial { color: #666666; font-size: xx-small; border-style: none solid solid none;
+    border-color: #CCCCCC; border-width: 1; font-family: sans-serif; padding: 0em 0.1em 0em 0.1em; background: #e0e0e0;
+    cursor:pointer; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+
+<script type="text/javascript">
+   // Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+   // Mozilla 0.9.6.
+
+   if (document.layers) {
+      //Netscape 4 specific code
+      pre = 'document.';
+      post = ''; }
+   if (document.getElementById) {
+      //Netscape 6 specific code
+      pre = 'document.getElementById("';
+      post = '").style'; }
+   if (document.all) {
+      //IE4+ specific code
+      pre = 'document.all.';
+      post = '.style'; }
+
+function layer_exists(layer) {
+   try {
+      eval(pre + layer + post);
+      return true; }
+   catch (error) {
+      return false; }}
+
+function show_layer(layer) {
+   eval(pre + layer + post).position = 'relative'; 
+   eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+   eval(pre + layer + post).visibility = 'hidden';
+   eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+   var i;
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folding_layer(folder+'_'+i); }
+
+   hide_layer('hide'+folder);
+   hide_layer('show'+folder);
+   hide_layer('fold'+folder);
+
+   scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+<p>NTAC
+<ul><li>Topics
+<ul><li>Tools
+<ul><li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+Capabilities
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;"><li>IEPD registry
+
+</li>
+
+</ul>
+</li>
+<li>Architecture
+
+</li>
+<li>Modules
+
+</li>
+<li>Development strategy
+
+</li>
+
+</ul>
+</li>
+<li>Metamodel
+<ul><li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+Transformations
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;"><li>to XSD
+
+</li>
+<li>from XSD
+
+</li>
+<li><span id="show1_2_1" class="foldclosed" onClick="show_folder('1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_2_1" class="foldopened" onClick="hide_folder('1_2_1')">-</span>
+to UML
+<ul id="fold1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>XMI
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_2" class="foldclosed" onClick="show_folder('1_2_2')" style="POSITION: absolute">+</span> <span id="hide1_2_2" class="foldopened" onClick="hide_folder('1_2_2')">-</span>
+from UML
+<ul id="fold1_2_2" style="POSITION: relative; VISIBILITY: visible;"><li>extensions!
+
+</li>
+
+</ul>
+</li>
+<li>to JSON Schema
+
+</li>
+<li>from JSON Schema
+
+</li>
+<li><span id="show1_2_3" class="foldclosed" onClick="show_folder('1_2_3')" style="POSITION: absolute">+</span> <span id="hide1_2_3" class="foldopened" onClick="hide_folder('1_2_3')">-</span>
+to diagram / model
+<ul id="fold1_2_3" style="POSITION: relative; VISIBILITY: visible;"><li>one "big index" of all the things
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2_4" class="foldclosed" onClick="show_folder('1_2_4')" style="POSITION: absolute">+</span> <span id="hide1_2_4" class="foldopened" onClick="hide_folder('1_2_4')">-</span>
+to data dictionary
+<ul id="fold1_2_4" style="POSITION: relative; VISIBILITY: visible;"><li>document?
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+Wantlist
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;"><li>cardinality on inlined elements
+
+</li>
+<li><span id="show1_3_1" class="foldclosed" onClick="show_folder('1_3_1')" style="POSITION: absolute">+</span> <span id="hide1_3_1" class="foldopened" onClick="hide_folder('1_3_1')">-</span>
+rules
+<ul id="fold1_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>Schematron
+
+</li>
+<li>Javascript
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>NIEM 5 requirements
+<ul><li>internationalization
+
+</li>
+<li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+metadata
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;"><li>status in ndr 4.0
+
+</li>
+<li>&amp; RDF
+
+</li>
+<li>&amp; JSON-LD
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Training
+<ul><li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+face-to-face
+<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;"><li>schedule
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+online
+<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;"><li>niem.github.io
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Specifications
+<ul><li>NIEM Conformance Specification
+
+</li>
+<li>NIEM Conformance Targets Attribute Specification
+
+</li>
+<li>NIEM Naming and Design Rules
+
+</li>
+<li>NIEM Model Package Description Specification
+
+</li>
+<li>NIEM Metamodel
+
+</li>
+<li>NIEM JSON Specification
+
+</li>
+<li>NIEM Code Lists Specification
+
+</li>
+<li>NIEM High-Level Version Architecture
+
+</li>
+<li>NIEM Schematron in XML Schema Documents Specification
+
+</li>
+
+</ul>
+</li>
+<li>5.0 deliverable candidates
+<ul><li>metadata
+
+</li>
+<li><span id="show1_7" class="foldclosed" onClick="show_folder('1_7')" style="POSITION: absolute">+</span> <span id="hide1_7" class="foldopened" onClick="hide_folder('1_7')">-</span>
+international
+<ul id="fold1_7" style="POSITION: relative; VISIBILITY: visible;"><li>"what we're willing to do"
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8" class="foldclosed" onClick="show_folder('1_8')" style="POSITION: absolute">+</span> <span id="hide1_8" class="foldopened" onClick="hide_folder('1_8')">-</span>
+spec
+<ul id="fold1_8" style="POSITION: relative; VISIBILITY: visible;"><li>conformance spec
+
+</li>
+<li>NDR
+
+</li>
+<li>new Message Description spec
+
+</li>
+<li><span id="show1_8_1" class="foldclosed" onClick="show_folder('1_8_1')" style="POSITION: absolute">+</span> <span id="hide1_8_1" class="foldopened" onClick="hide_folder('1_8_1')">-</span>
+code lists spec
+<ul id="fold1_8_1" style="POSITION: relative; VISIBILITY: visible;"><li>easy
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_8_2" class="foldclosed" onClick="show_folder('1_8_2')" style="POSITION: absolute">+</span> <span id="hide1_8_2" class="foldopened" onClick="hide_folder('1_8_2')">-</span>
+json spec
+<ul id="fold1_8_2" style="POSITION: relative; VISIBILITY: visible;"><li>probably just make it final/5.0
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_9" class="foldclosed" onClick="show_folder('1_9')" style="POSITION: absolute">+</span> <span id="hide1_9" class="foldopened" onClick="hide_folder('1_9')">-</span>
+code values mapped to URIs in RDF
+<ul id="fold1_9" style="POSITION: relative; VISIBILITY: visible;"><li>%-encoded code values as URIs
+
+</li>
+<li>"make-model" problem
+
+</li>
+
+</ul>
+</li>
+<li>metamodel is not 5.0 critical path
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Thursday work list
+<ul><li><span id="show1_10" class="foldclosed" onClick="show_folder('1_10')" style="POSITION: absolute">+</span> <span id="hide1_10" class="foldopened" onClick="hide_folder('1_10')">-</span>
+done
+<ul id="fold1_10" style="POSITION: relative; VISIBILITY: visible;"><li>Metadata / technicals
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_11" class="foldclosed" onClick="show_folder('1_11')" style="POSITION: absolute">+</span> <span id="hide1_11" class="foldopened" onClick="hide_folder('1_11')">-</span>
+5.0 actual requirements
+<ul id="fold1_11" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_11_1" class="foldclosed" onClick="show_folder('1_11_1')" style="POSITION: absolute">+</span> <span id="hide1_11_1" class="foldopened" onClick="hide_folder('1_11_1')">-</span>
+done
+<ul id="fold1_11_1" style="POSITION: relative; VISIBILITY: visible;"><li>"What do we need to deliver for 5.0 release?
+
+</li>
+<li>deliverables
+
+</li>
+
+</ul>
+</li>
+<li>capablities
+
+</li>
+
+</ul>
+</li>
+<li>Message Description
+
+</li>
+
+</ul>
+</li>
+<li>Metadata
+<ul><li><span id="show1_12" class="foldclosed" onClick="show_folder('1_12')" style="POSITION: absolute">+</span> <span id="hide1_12" class="foldopened" onClick="hide_folder('1_12')">-</span>
+What's the scope of a metadata assertion?
+<ul id="fold1_12" style="POSITION: relative; VISIBILITY: visible;"><li>How big is a record? How deep does a metadata assertion apply?
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Message description
+<ul><li><span id="show1_13" class="foldclosed" onClick="show_folder('1_13')" style="POSITION: absolute">+</span> <span id="hide1_13" class="foldopened" onClick="hide_folder('1_13')">-</span>
+vocabulary
+<ul id="fold1_13" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_13_1" class="foldclosed" onClick="show_folder('1_13_1')" style="POSITION: absolute">+</span> <span id="hide1_13_1" class="foldopened" onClick="hide_folder('1_13_1')">-</span>
+"message"
+<ul id="fold1_13_1" style="POSITION: relative; VISIBILITY: visible;"><li>One kind of IEPD is a message description
+
+</li>
+<li><span id="show1_13_1_1" class="foldclosed" onClick="show_folder('1_13_1_1')" style="POSITION: absolute">+</span> <span id="hide1_13_1_1" class="foldopened" onClick="hide_folder('1_13_1_1')">-</span>
+message description
+<ul id="fold1_13_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>formerly an IEPD
+
+</li>
+<li><span id="show1_13_1_1_1" class="foldclosed" onClick="show_folder('1_13_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_13_1_1_1" class="foldopened" onClick="hide_folder('1_13_1_1_1')">-</span>
+the package
+<ul id="fold1_13_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>zip
+
+</li>
+<li>a git commit
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_1_2" class="foldclosed" onClick="show_folder('1_13_1_2')" style="POSITION: absolute">+</span> <span id="hide1_13_1_2" class="foldopened" onClick="hide_folder('1_13_1_2')">-</span>
+message format
+<ul id="fold1_13_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>an IEP class
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_13_1_3" class="foldclosed" onClick="show_folder('1_13_1_3')" style="POSITION: absolute">+</span> <span id="hide1_13_1_3" class="foldopened" onClick="hide_folder('1_13_1_3')">-</span>
+schema document set
+<ul id="fold1_13_1_3" style="POSITION: relative; VISIBILITY: visible;"><li>&#8230;but how to assemble into a schema
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_14" class="foldclosed" onClick="show_folder('1_14')" style="POSITION: absolute">+</span> <span id="hide1_14" class="foldopened" onClick="hide_folder('1_14')">-</span>
+schema assembly
+<ul id="fold1_14" style="POSITION: relative; VISIBILITY: visible;"><li>Would be nice to have rules that warn you when schema assebmlbly might go weird
+
+</li>
+<li>Use exchange schemas as source of convention over what the root element is for a message
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15" class="foldclosed" onClick="show_folder('1_15')" style="POSITION: absolute">+</span> <span id="hide1_15" class="foldopened" onClick="hide_folder('1_15')">-</span>
+conventions
+<ul id="fold1_15" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_15_1" class="foldclosed" onClick="show_folder('1_15_1')" style="POSITION: absolute">+</span> <span id="hide1_15_1" class="foldopened" onClick="hide_folder('1_15_1')">-</span>
+root folder
+<ul id="fold1_15_1" style="POSITION: relative; VISIBILITY: visible;"><li>xsd/
+
+</li>
+<li>json/
+
+</li>
+<li>model/
+
+</li>
+<li><span id="show1_15_1_1" class="foldclosed" onClick="show_folder('1_15_1_1')" style="POSITION: absolute">+</span> <span id="hide1_15_1_1" class="foldopened" onClick="hide_folder('1_15_1_1')">-</span>
+manifest as&#8230;or&#8230;
+<ul id="fold1_15_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>manifest.json
+
+</li>
+<li>manifest.xml
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15_2" class="foldclosed" onClick="show_folder('1_15_2')" style="POSITION: absolute">+</span> <span id="hide1_15_2" class="foldopened" onClick="hide_folder('1_15_2')">-</span>
+kinds of artifacts
+<ul id="fold1_15_2" style="POSITION: relative; VISIBILITY: visible;"><li>mapping spreadsheet
+
+</li>
+<li><span id="show1_15_2_1" class="foldclosed" onClick="show_folder('1_15_2_1')" style="POSITION: absolute">+</span> <span id="hide1_15_2_1" class="foldopened" onClick="hide_folder('1_15_2_1')">-</span>
+wantlist
+<ul id="fold1_15_2_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_15_2_1_1" class="foldclosed" onClick="show_folder('1_15_2_1_1')" style="POSITION: absolute">+</span> <span id="hide1_15_2_1_1" class="foldopened" onClick="hide_folder('1_15_2_1_1')">-</span>
+vs "model" based on the metamodel
+<ul id="fold1_15_2_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>{will be dependent on the timing of the &nbsp;release of the specs}
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15_3" class="foldclosed" onClick="show_folder('1_15_3')" style="POSITION: absolute">+</span> <span id="hide1_15_3" class="foldopened" onClick="hide_folder('1_15_3')">-</span>
+kinds of conventions
+<ul id="fold1_15_3" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_15_3_1" class="foldclosed" onClick="show_folder('1_15_3_1')" style="POSITION: absolute">+</span> <span id="hide1_15_3_1" class="foldopened" onClick="hide_folder('1_15_3_1')">-</span>
+without implication
+<ul id="fold1_15_3_1" style="POSITION: relative; VISIBILITY: visible;"><li>e.g., "model" folder for UML and data model design documents
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15_3_2" class="foldclosed" onClick="show_folder('1_15_3_2')" style="POSITION: absolute">+</span> <span id="hide1_15_3_2" class="foldopened" onClick="hide_folder('1_15_3_2')">-</span>
+with implication
+<ul id="fold1_15_3_2" style="POSITION: relative; VISIBILITY: visible;"><li>things that will result in information being in the implied manifest
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15_4" class="foldclosed" onClick="show_folder('1_15_4')" style="POSITION: absolute">+</span> <span id="hide1_15_4" class="foldopened" onClick="hide_folder('1_15_4')">-</span>
+rules
+<ul id="fold1_15_4" style="POSITION: relative; VISIBILITY: visible;"><li>there's not a convention for a message description defining multiple formats
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15_5" class="foldclosed" onClick="show_folder('1_15_5')" style="POSITION: absolute">+</span> <span id="hide1_15_5" class="foldopened" onClick="hide_folder('1_15_5')">-</span>
+how do we structure a JSON Message Description vs an XML message description
+<ul id="fold1_15_5" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_15_5_1" class="foldclosed" onClick="show_folder('1_15_5_1')" style="POSITION: absolute">+</span> <span id="hide1_15_5_1" class="foldopened" onClick="hide_folder('1_15_5_1')">-</span>
+json
+<ul id="fold1_15_5_1" style="POSITION: relative; VISIBILITY: visible;"><li>openapi
+
+</li>
+<li>json schema
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_15_6" class="foldclosed" onClick="show_folder('1_15_6')" style="POSITION: absolute">+</span> <span id="hide1_15_6" class="foldopened" onClick="hide_folder('1_15_6')">-</span>
+"discovery" info
+<ul id="fold1_15_6" style="POSITION: relative; VISIBILITY: visible;"><li>should be mostly optional
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_16" class="foldclosed" onClick="show_folder('1_16')" style="POSITION: absolute">+</span> <span id="hide1_16" class="foldopened" onClick="hide_folder('1_16')">-</span>
+Sample message descriptions
+<ul id="fold1_16" style="POSITION: relative; VISIBILITY: visible;"><li>XML only
+
+</li>
+<li><span id="show1_16_1" class="foldclosed" onClick="show_folder('1_16_1')" style="POSITION: absolute">+</span> <span id="hide1_16_1" class="foldopened" onClick="hide_folder('1_16_1')">-</span>
+JSON only
+<ul id="fold1_16_1" style="POSITION: relative; VISIBILITY: visible;"><li>with OpenAPI
+
+</li>
+
+</ul>
+</li>
+<li>Mixed
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Schedule / Timeline
+<ul><li><span id="show1_17" class="foldclosed" onClick="show_folder('1_17')" style="POSITION: absolute">+</span> <span id="hide1_17" class="foldopened" onClick="hide_folder('1_17')">-</span>
+~Dec 12: ESC
+<ul id="fold1_17" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_17_1" class="foldclosed" onClick="show_folder('1_17_1')" style="POSITION: absolute">+</span> <span id="hide1_17_1" class="foldopened" onClick="hide_folder('1_17_1')">-</span>
+deliverables
+<ul id="fold1_17_1" style="POSITION: relative; VISIBILITY: visible;"><li>tool strategy
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Friday work list
+<ul><li>Metamodel
+<ul><li>@ content style
+
+</li>
+
+</ul>
+</li>
+<li>Tool architecture
+<ul><li>IEPD functions
+<ul><li>Post an IEPD
+<ul><li>We should have documentation of how an IEPD should be put on Github
+
+</li>
+
+</ul>
+</li>
+<li>Validate an IEPD
+<ul><li>a registry could validate IEPDs and indicate conformance
+
+</li>
+
+</ul>
+</li>
+<li>Construct an IEPD
+
+</li>
+<li>Edit an IEPD
+<ul><li>git backend for modifying /tracking IEPD changes
+
+</li>
+
+</ul>
+</li>
+<li>implement an IEPD
+<ul><li>OpenAPI
+
+</li>
+<li>FHIR
+
+</li>
+<li>provide sample implementations
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>Specifications development strategy
+
+</li>
+
+</ul>
+</li>
+<li>Action items
+<ul><li><span id="show1_18" class="foldclosed" onClick="show_folder('1_18')" style="POSITION: absolute">+</span> <span id="hide1_18" class="foldopened" onClick="hide_folder('1_18')">-</span>
+Metadata to be tackled by TSWG
+<ul id="fold1_18" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_18_1" class="foldclosed" onClick="show_folder('1_18_1')" style="POSITION: absolute">+</span> <span id="hide1_18_1" class="foldopened" onClick="hide_folder('1_18_1')">-</span>
+drive with use case examples
+<ul id="fold1_18_1" style="POSITION: relative; VISIBILITY: visible;"><li><span id="show1_18_1_1" class="foldclosed" onClick="show_folder('1_18_1_1')" style="POSITION: absolute">+</span> <span id="hide1_18_1_1" class="foldopened" onClick="hide_folder('1_18_1_1')">-</span>
+Health privacy
+<ul id="fold1_18_1_1" style="POSITION: relative; VISIBILITY: visible;"><li>from Brian Handspicker
+
+</li>
+<li>&amp; consent
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_18_1_2" class="foldclosed" onClick="show_folder('1_18_1_2')" style="POSITION: absolute">+</span> <span id="hide1_18_1_2" class="foldopened" onClick="hide_folder('1_18_1_2')">-</span>
+Criminal history records
+<ul id="fold1_18_1_2" style="POSITION: relative; VISIBILITY: visible;"><li>from Keith Ellis
+
+</li>
+<li>&amp; source info
+
+</li>
+<li><span id="show1_18_1_2_1" class="foldclosed" onClick="show_folder('1_18_1_2_1')" style="POSITION: absolute">+</span> <span id="hide1_18_1_2_1" class="foldopened" onClick="hide_folder('1_18_1_2_1')">-</span>
+"purpose code"
+<ul id="fold1_18_1_2_1" style="POSITION: relative; VISIBILITY: visible;"><li>why was this info collected
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li>The term "NIEM message description" supersedes the term "IEPD"
+
+</li>
+<li>Message description spec to be carried on by TSWG
+
+</li>
+<li>Establish quarterly joint NTAC/NBAC telecons
+
+</li>
+
+</ul>
+</li>
+
+</ul><SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body>
+</html>
